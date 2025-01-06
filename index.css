@@ -1,0 +1,241 @@
+*{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+}
+
+.navbar {
+    position: fixed;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #333;
+    padding: 0.5%;
+    width: 100%;
+}
+.navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+.navbar a:hover {
+    background-color: rgb(71, 252, 119);
+    color: black;
+}
+
+#formContainer {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.675);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+#conciertoForm{
+    background-color: gray;
+    background-image: none;
+    justify-self: center;
+    text-align: center;
+    margin-top: 40vh;
+    width: 40%;
+    padding: 1%;
+    border-radius: 1vw;
+    border: 1px solid black;
+    color: white;
+    font-weight: bold;
+}
+#conciertoForm input{
+    width: 50%;
+    text-align: center;
+}
+#formContainer.hidden {
+    display: none;
+}
+
+.main{
+    display: grid;
+    grid-template-columns: repeat(4, 300px);
+    grid-template-rows: repeat(2, 450px);
+    justify-content: center;
+    margin-left: 18%;
+    margin-right: 18%;
+    height: auto;
+}
+
+[id^="c"]{
+    background-image: url(Multimedia/prox.jpg);
+}
+
+
+.cards{
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: 1px solid black;
+    padding: 0;
+    margin: 5%;
+    border-radius: 2%;
+}
+
+.tit{
+    display: flex;
+    justify-content: center;
+    background-color: #575757;
+    border: 1px solid black;
+    border-radius: 1vw;
+    margin-top: 5%;
+    padding: 0.5%;
+    align-self: center;
+}
+
+.tit h1{
+    text-align: center;
+    padding: 1%;
+    margin: 0 auto;
+    background-color: rgb(71, 252, 119);
+    border-radius: 0.5vw;
+}
+
+.card{
+    display: none;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgba(55, 55, 55, 0.719);
+    text-align: center;
+    height: 100%;
+    color: rgb(255, 255, 255);
+    box-shadow: 10px 10px 5px rgb(42, 42, 42);
+}
+
+.cards{
+    box-shadow: 5px 5px 5px rgb(117, 117, 117);
+}
+
+.cards:hover .card{
+    display: flex;
+}
+
+.cards [id^="art"]{
+    height: 25%;
+    
+}
+.cards [id^="sal"]{
+    height: 25%;
+}
+.cards [id^="fch"]{
+    color: white;
+}
+
+.cards .comprar{
+    background-color: rgb(255, 255, 255);
+    width: 80%;
+    height: 15%;
+
+}
+
+.cards .comprar a{
+    text-decoration: none;
+    color: black;
+}
+
+.adm{
+    display: none;
+}
+
+.tickets{
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    background-color: gray;
+    margin-top: 3%;
+    width: 50%;
+    padding: 1%;
+    border: 1px solid black;
+    border-radius: 1vw;
+    box-shadow: 10px 10px 5px rgb(42, 42, 42);
+
+}
+
+.tickets form{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 100%;
+    background-color: rgb(71, 252, 119);
+    border: 1px solid black;
+    border-radius: 0.5vw;
+    padding: 1%;
+}
+
+.tickets .con{
+    padding: 1%;
+    font-size: 1em;
+    color: white;
+    background-color: black;
+}
+
+.tickets button{
+    padding: 2%;
+    width: 21%;
+    background-color: #575757;
+    color: white;
+    border: 0;
+}
+
+#nticks{
+    display: none;
+    text-align: center;
+    background-color: rgb(255, 0, 0);
+    color: white;
+}
+
+#full{
+    display: none;
+    text-align: center;
+    background-color: rgb(255, 0, 0);
+    color: white;
+}
+
+.titulos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(71, 252, 119);
+    margin-bottom: 3%;
+    border: 1px solid black;
+    border-radius: 0.5vw;
+}
+
+.close{
+    display: flex;
+    width: 100%;
+    justify-content: end;
+    background-color: transparent;
+    border: 0;
+}
+.close-card{
+    display: flex;
+    width: 100%;
+    font-size: 2vw;
+    justify-content: end;
+    background-color: transparent;
+    border: 0;
+    color: white;
+}
+
+.botones{
+   padding: 1%;
+   background-color: #575757;
+   border: 2px solid violet;
+   border: 0;
+   color: white;
+}
